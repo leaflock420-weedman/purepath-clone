@@ -19,6 +19,8 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,400i,500i,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Calendly booking widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,7 +84,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
       </div>
-      <a href="book.html" class="btn btn-primary nav-cta">Book a consultation</a>
+      <a href="#book-online" class="btn btn-primary nav-cta">Book a consultation</a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
@@ -94,7 +96,7 @@
       <a href="your-path.html" data-nav>Your path</a>
       <a href="visit.html" data-nav>Visit</a>
       <a href="faq.html" data-nav>FAQ</a>
-      <a href="book.html" data-nav>Book</a>
+      <a href="#book-online" data-nav>Book</a>
       <div class="mobile-social">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Pure+Path+52+Price+St+Nerang+QLD+4211" target="_blank" rel="noopener noreferrer">Google</a>
         <a href="https://www.instagram.com/purepath_au/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -102,7 +104,7 @@
         <a href="https://www.google.com/search?q=Pure+Path+Nerang+reviews" target="_blank" rel="noopener noreferrer">Google Reviews</a>
       </div>
       <a href="tel:+61756328124" class="btn btn-ghost">Call (07) 5632 8124</a>
-      <a href="book.html" class="btn btn-primary">Book a consultation</a>
+      <a href="#book-online" class="btn btn-primary">Book a consultation</a>
     </div>
   </header>
 
@@ -120,8 +122,8 @@
             Pure Path is a private clinic in Nerang offering care designed for you — with chiropractic, psychology, and medical practitioners available. Confidential consultations by phone or in person at Earle Plaza.
           </p>
           <div class="hero-actions">
-            <a href="book.html" class="btn btn-primary btn-lg">
-              Book a consultation
+            <a href="#book-online" class="btn btn-primary btn-lg">
+              Book telehealth consult
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <a href="tel:+61756328124" class="btn btn-ghost btn-lg">Call (07) 5632 8124</a>
@@ -160,7 +162,32 @@
           We provide <strong>consultation services</strong>
           only. Clinical decisions follow individual assessment by a registered practitioner. Next steps are always personal, and only considered after clinical assessment.
         </p>
-        <a href="book.html" class="btn btn-dark">Book consultation</a>
+        <a href="#book-online" class="btn btn-dark">Book online now</a>
+      </div>
+    </section>
+
+    <!-- Simple Calendly booking -->
+    <section class="calendly-section" id="book-online">
+      <div class="container">
+        <div class="section-head reveal calendly-head">
+          <p class="eyebrow">Book online</p>
+          <h2>Telehealth initial consultation</h2>
+          <p class="section-sub">Pick a time that works for you — simple, secure, and done in a minute.</p>
+        </div>
+        <div class="calendly-shell reveal">
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/purepathmedical-support/telehealth-initial-consultation?hide_gdpr_banner=1&amp;primary_color=184120"
+            style="min-width:320px;height:720px;"
+            role="region"
+            aria-label="Book a telehealth initial consultation">
+          </div>
+          <p class="calendly-fallback">
+            Widget not loading?
+            <a href="https://calendly.com/purepathmedical-support/telehealth-initial-consultation" target="_blank" rel="noopener noreferrer">Open the booking page</a>
+            or call <a href="tel:+61756328124">(07) 5632 8124</a>.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -175,8 +202,8 @@
           <article class="step reveal">
             <div class="step-num">01</div>
             <div class="step-icon"><img src="assets/icon1.svg" alt="" width="52" height="52"></div>
-            <h3>Request or call</h3>
-            <p>Call, book online, or visit us in Nerang — no referral required.</p>
+            <h3>Book online</h3>
+            <p>Choose a telehealth time above — or call / visit us in Nerang.</p>
           </article>
           <article class="step reveal delay-1">
             <div class="step-num">02</div>
@@ -212,7 +239,7 @@
           </p>
           <div class="hero-actions">
             <a href="services.html" class="btn btn-ghost">Explore services</a>
-            <a href="book.html" class="btn btn-primary">Book a consultation</a>
+            <a href="#book-online" class="btn btn-primary">Book telehealth</a>
           </div>
         </div>
       </div>
@@ -221,15 +248,17 @@
     <section class="book" style="padding: 72px 0;">
       <div class="container" style="text-align:center; max-width:640px;">
         <p class="eyebrow light">Ready when you are</p>
-        <h2 style="color:#fff; margin-bottom:14px;">Ready to book a consultation?</h2>
-        <p class="lead light" style="margin-inline:auto;">Call, request online, or visit Earle Plaza, Nerang during open hours.</p>
+        <h2 style="color:#fff; margin-bottom:14px;">Prefer to talk first?</h2>
+        <p class="lead light" style="margin-inline:auto;">Call the clinic, visit Earle Plaza, or jump back to online booking.</p>
         <div class="hero-actions" style="justify-content:center; margin-top:24px;">
           <a href="tel:+61756328124" class="btn btn-ghost btn-lg" style="color:#fff; border-color:rgba(255,255,255,.3);">Call (07) 5632 8124</a>
-          <a href="book.html" class="btn btn-primary btn-lg" style="background:#90e300; color:#1c2706;">Book now</a>
+          <a href="#book-online" class="btn btn-primary btn-lg" style="background:#90e300; color:#1c2706;">Book online</a>
         </div>
       </div>
     </section>
   </main>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   <footer class="site-footer">
     <div class="container footer-grid">

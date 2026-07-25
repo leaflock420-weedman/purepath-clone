@@ -19,6 +19,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,400i,500i,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>  <div class="top-bar" role="note">
     <span>AHPRA-registered practitioners · Earle Plaza, Nerang · <a href="tel:+61756328124">(07) 5632 8124</a></span>
@@ -74,26 +75,47 @@
   </header>
 
   <main>
+    <section class="calendly-section" id="book-online" style="padding-top:40px;">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Book</span>
+        </nav>
+        <div class="section-head reveal calendly-head">
+          <p class="eyebrow">Book online</p>
+          <h1 style="font-size:clamp(1.8rem,4vw,2.5rem);">Telehealth initial consultation</h1>
+          <p class="section-sub">Choose a time below — or call <a href="tel:+61756328124" style="color:var(--green-deep);font-weight:700;">(07) 5632 8124</a> / visit Earle Plaza, Nerang.</p>
+        </div>
+        <div class="calendly-shell reveal">
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/purepathmedical-support/telehealth-initial-consultation?hide_gdpr_banner=1&amp;primary_color=184120"
+            style="min-width:320px;height:720px;"
+            role="region"
+            aria-label="Book a telehealth initial consultation">
+          </div>
+          <p class="calendly-fallback">
+            <a href="https://calendly.com/purepathmedical-support/telehealth-initial-consultation" target="_blank" rel="noopener noreferrer">Open full booking page</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="book" id="book" style="padding-top:48px; padding-bottom:90px;">
       <div class="container book-grid">
         <div class="book-copy reveal">
-          <nav class="breadcrumb" aria-label="Breadcrumb" style="color:rgba(255,255,255,.6);">
-            <a href="index.html" style="color:#90e300;">Home</a><span aria-hidden="true">/</span><span>Book</span>
-          </nav>
-          <p class="eyebrow light">Book with us</p>
-          <h1 style="color:#fff; font-size:clamp(2rem,3.5vw,2.8rem); margin-bottom:14px;">Ready to book a consultation?</h1>
-          <p class="lead light">Request an appointment by form, phone, or at our Nerang clinic. Share what brought you here — we will help design the next step with you.</p>
+          <p class="eyebrow light">Or send a message</p>
+          <h2 style="color:#fff; font-size:clamp(1.6rem,3vw,2.1rem); margin-bottom:14px;">Not sure which appointment?</h2>
+          <p class="lead light">Leave your details and we’ll help you choose the right next step.</p>
           <ul class="check-list light">
-            <li>Call <a href="tel:+61756328124"><strong>(07) 5632 8124</strong></a> or request online</li>
+            <li>Call <a href="tel:+61756328124"><strong>(07) 5632 8124</strong></a></li>
             <li>In person at Earle Plaza, Shop G3/52 Price St, Nerang</li>
             <li>Open Mon–Sat 10&nbsp;am–6&nbsp;pm · Consultations from <strong>$80</strong></li>
           </ul>
-          <p style="margin-top:20px; font-size:0.88rem; color:rgba(255,255,255,.55); max-width:40ch;">Tell us what you need — including if you would like a medical consultation. We will guide you personally after we understand your situation.</p>
         </div>
 
         <form class="book-form reveal delay-1" id="booking-form" novalidate>
-          <h2 style="font-size:1.35rem; margin-bottom:4px;">Request a consultation</h2>
-          <p class="form-note">Prefer to talk? Call <a href="tel:+61756328124">(07) 5632 8124</a> — or send a request and we’ll confirm by email.</p>
+          <h2 style="font-size:1.35rem; margin-bottom:4px;">Quick enquiry</h2>
+          <p class="form-note">Prefer instant booking? Use the calendar above. Or call <a href="tel:+61756328124">(07) 5632 8124</a>.</p>
 
           <div class="field-row">
             <label>
@@ -199,6 +221,7 @@
       <p class="muted">Pure Path · Earle Plaza, Nerang · AHPRA-registered practitioners</p>
     </div>
   </footer>
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script src="app.js"></script>
 </body>
 </html>

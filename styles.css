@@ -1771,6 +1771,71 @@ p {
   }
 }
 
+/* Calendly booking (homepage) */
+.calendly-section {
+  padding: 56px 0 72px;
+  background: var(--white);
+  border-block: 1px solid var(--line);
+}
+
+.calendly-head {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 28px;
+}
+
+.calendly-shell {
+  max-width: 920px;
+  margin-inline: auto;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 12px 12px 8px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.calendly-inline-widget {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 720px !important;
+}
+
+.calendly-fallback {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+  padding: 8px 12px 14px;
+}
+
+.calendly-fallback a {
+  color: var(--green-deep);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 809px) {
+  .calendly-section {
+    padding: 40px 0 52px;
+  }
+
+  .calendly-shell {
+    border-radius: 18px;
+    padding: 8px 6px 4px;
+  }
+
+  .calendly-inline-widget {
+    height: 680px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendly-inline-widget {
+    height: 640px !important;
+  }
+}
+
 /* Tiny footer disclaimer */
 .site-disclaimer {
   width: min(100% - 40px, var(--container));
