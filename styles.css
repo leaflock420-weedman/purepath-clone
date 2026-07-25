@@ -1468,6 +1468,31 @@ p {
   color: rgba(255, 255, 255, 0.45);
 }
 
+/* TGA / advertising compliance notice */
+.tga-notice {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tga-notice p {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 95ch;
+}
+
+.tga-notice strong {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+}
+
+.tga-notice em {
+  font-style: italic;
+}
+
 /* Reveal animations */
 .reveal {
   opacity: 0;

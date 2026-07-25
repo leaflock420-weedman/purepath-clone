@@ -26,6 +26,12 @@ Also includes `sitemap.xml`, `robots.txt`, and LocalBusiness/MedicalClinic JSON-
 - **Address:** Shop G3/52 Price St, Earle Plaza, Nerang QLD 4211  
 - **Hours:** Mon–Sat 10 am–6 pm · Sunday closed  
 
+## TGA / advertising compliance
+
+Site copy is written to **advertise consultation services only**, not prescription medicines or other restricted therapeutic goods (Therapeutic Goods Act / TGA advertising rules). See `disclaimer.html`.  
+
+This is **not legal advice** — have a qualified Australian lawyer review before public marketing.  
+
 ## Run locally
 
 ```bash
