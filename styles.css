@@ -1946,3 +1946,22 @@ p {
     padding: 24px 18px;
   }
 }
+
+.team-card-media-brand {
+  background: var(--green-deep);
+  display: grid;
+  place-items: center;
+  padding: 36px;
+}
+.team-card-media-brand img {
+  width: min(78%, 280px);
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+.team-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: 1fr; }
+}
