@@ -19,6 +19,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,400i,500i,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>  <div class="top-bar" role="note">
     <span>AHPRA-registered practitioners · Earle Plaza, Nerang · <a href="tel:+61756328124">(07) 5632 8124</a></span>
@@ -74,17 +75,28 @@
   </header>
 
   <main>
-    <section class="pp-booking-section" id="book-online" style="padding-top:40px;">
+    <section class="calendly-section" id="book-online" style="padding-top:40px;">
       <div class="container">
         <nav class="breadcrumb reveal" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Book</span>
         </nav>
-        <div class="section-head reveal pp-booking-head">
+        <div class="section-head reveal calendly-head">
           <p class="eyebrow">Book online</p>
-          <h1 style="font-size:clamp(1.8rem,4vw,2.5rem);">Pure Path patient booking</h1>
-          <p class="section-sub">Telehealth or in-clinic medical consultations — or call <a href="tel:+61756328124" style="color:var(--green-deep);font-weight:700;">(07) 5632 8124</a>.</p>
+          <h1 style="font-size:clamp(1.8rem,4vw,2.5rem);">Telehealth initial consultation</h1>
+          <p class="section-sub">Choose a time below — or call <a href="tel:+61756328124" style="color:var(--green-deep);font-weight:700;">(07) 5632 8124</a> / visit Earle Plaza, Nerang.</p>
         </div>
-        <div class="pp-booking-shell reveal" data-pp-booking aria-label="Pure Path booking"></div>
+        <div class="calendly-shell reveal">
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/purepathmedical-support/telehealth-initial-consultation?hide_gdpr_banner=1&amp;primary_color=184120"
+            style="min-width:320px;height:720px;"
+            role="region"
+            aria-label="Book a telehealth initial consultation">
+          </div>
+          <p class="calendly-fallback">
+            <a href="https://calendly.com/purepathmedical-support/telehealth-initial-consultation" target="_blank" rel="noopener noreferrer">Open full booking page</a>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -209,8 +221,7 @@
       <p class="muted">Pure Path · Earle Plaza, Nerang · AHPRA-registered practitioners</p>
     </div>
   </footer>
-  
-  <script src="booking.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script src="app.js"></script>
 </body>
 </html>
