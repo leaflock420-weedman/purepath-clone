@@ -1965,3 +1965,281 @@ p {
 @media (max-width: 900px) {
   .team-grid { grid-template-columns: 1fr; }
 }
+/* ---- Social rows on cards / profiles ---- */
+.card-social,
+.profile-social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.card-social a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card-social a:hover {
+  color: var(--green-ink);
+}
+
+.profile-social-row {
+  margin-top: 16px;
+}
+
+.profile-social-row .social-btn {
+  font-size: 0.82rem;
+  padding: 8px 12px;
+}
+
+/* ---- Responsive: fluid type + layout safety ---- */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-actions,
+.social-row,
+.stat-pills,
+.profile-badge-row,
+.service-chips {
+  max-width: 100%;
+}
+
+.hero-actions .btn,
+.profile-cta .btn {
+  max-width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .profile-photo-wrap {
+    position: static;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .care-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .book-grid,
+  .faq-grid,
+  .about-grid,
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .visit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Phones / small tablets */
+@media (max-width: 809px) {
+  :root {
+    --header-h: 64px;
+  }
+
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+
+  .top-bar {
+    font-size: 11px;
+    padding: 7px 12px;
+    line-height: 1.35;
+  }
+
+  .logo-img {
+    height: 28px;
+    max-width: min(140px, 48vw);
+  }
+
+  .nav {
+    min-height: var(--header-h);
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 28px 0 48px;
+  }
+
+  .hero h1,
+  .page-hero h1,
+  .profile-content h1 {
+    font-size: clamp(1.75rem, 7.5vw, 2.35rem);
+    max-width: none;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .btn-lg {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .price-card {
+    position: static;
+    max-width: none;
+    margin-top: 0;
+    border-radius: 0 0 22px 22px;
+  }
+
+  .hero-frame {
+    aspect-ratio: auto;
+  }
+
+  .hero-main-img {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .team-grid,
+  .service-grid,
+  .why-grid,
+  .approach-grid,
+  .footer-grid,
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .intro-inner .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-hero {
+    padding: 32px 0 28px;
+  }
+
+  .page-section,
+  .about,
+  .how,
+  .services,
+  .faq,
+  .visit {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .book-form {
+    padding: 22px 18px;
+  }
+
+  .profile-cta .hero-actions {
+    flex-direction: column;
+  }
+
+  .visit-social {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .social-row {
+    width: 100%;
+  }
+
+  .social-btn {
+    flex: 1 1 calc(50% - 8px);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-disclaimer {
+    width: min(100% - 28px, var(--container));
+    padding: 0 4px;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  .pill-row {
+    gap: 6px;
+  }
+
+  .pill {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .logo-img {
+    height: 24px;
+    max-width: 120px;
+  }
+
+  .social-btn {
+    flex: 1 1 100%;
+  }
+
+  .trust-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1400px) {
+  :root {
+    --container: 1200px;
+  }
+}
