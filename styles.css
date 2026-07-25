@@ -882,7 +882,7 @@ p {
 
 .service-media {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--sage);
 }
@@ -891,6 +891,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   transition: transform 0.5s var(--ease);
 }
 
@@ -1745,29 +1746,43 @@ p {
   }
 }
 
-/* TGA / advertising compliance notice */
-.tga-notice {
-  margin-top: 28px;
-  padding: 18px 20px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* Tiny footer disclaimer */
+.site-disclaimer {
+  width: min(100% - 40px, var(--container));
+  margin: 20px auto 0;
+  padding: 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.38);
+  text-align: center;
 }
 
-.tga-notice p {
-  font-size: 0.8rem;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.55);
-  max-width: 95ch;
+.site-disclaimer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.tga-notice strong {
-  color: rgba(255, 255, 255, 0.78);
-  font-weight: 600;
+.site-disclaimer a:hover {
+  color: rgba(255, 255, 255, 0.72);
 }
 
-.tga-notice em {
-  font-style: italic;
+/* Team + profile media framing (matches service cards) */
+.team-card-media {
+  aspect-ratio: 4 / 3;
+}
+
+.team-card-media img {
+  object-position: center 18%;
+}
+
+.profile-photo {
+  aspect-ratio: 3 / 4;
+}
+
+.profile-photo img {
+  object-position: center 15%;
 }
 
 /* Reveal animations */
