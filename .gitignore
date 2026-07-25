@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+source.html
+content-extract.txt
+faq-chunk.txt
+search.json
+sentences.txt

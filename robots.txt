@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leaflock420-weedman.github.io/purepath-clone/sitemap.xml
