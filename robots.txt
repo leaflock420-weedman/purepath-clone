@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Primary sitemap
 Sitemap: https://leaflock420-weedman.github.io/purepath-clone/sitemap.xml
+
+# Prefer HTTPS pages
+User-agent: Googlebot
+Allow: /
